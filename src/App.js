@@ -45,6 +45,12 @@ const App = () => {
     ]);
   };
 
+  const removerUltimoElemento = ()=> {
+    const aux  =[...moveableComponents];
+    aux.pop();
+    setMoveableComponents(aux);
+  }
+
   const updateMoveable = (id, newComponent, updateEnd = false) => {
     const updatedMoveables = moveableComponents.map((moveable, i) => {
       if (moveable.id === id) {
@@ -78,7 +84,8 @@ const App = () => {
 
   return (
     <main style={{ height: "100vh", width: "100vw" }}>
-      <button onClick={addMoveable}>Add Moveable1</button>
+      <button onClick={addMoveable}>Agregar elemento</button>
+      <button onClick={()=>removerUltimoElemento()}>Remover el último elemento agregado</button>
       <div
         onKeyDown={()=>handleKeyDown()}
         id="parent"
