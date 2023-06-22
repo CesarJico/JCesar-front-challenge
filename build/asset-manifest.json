@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/JCesar-front-challenge/static/js/main.b9bb4226.js",
-    "index.html": "/JCesar-front-challenge/index.html",
-    "main.b9bb4226.js.map": "/JCesar-front-challenge/static/js/main.b9bb4226.js.map"
+    "main.js": "/static/js/main.b9bb4226.js",
+    "index.html": "/index.html",
+    "main.b9bb4226.js.map": "/static/js/main.b9bb4226.js.map"
   },
   "entrypoints": [
     "static/js/main.b9bb4226.js"
